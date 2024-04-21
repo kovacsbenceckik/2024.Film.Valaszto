@@ -23,7 +23,7 @@ House of the Dead: 90: 2.0
 Amerikai história X: 8.8: 117
 The Emoji Movie: 86: 3.3
 Gladiátor: 8.8: 149
-Stephen King: Halálsoron: 9.2: 188
+Stephen King-Halálsoron: 9.2: 188
 Forrest Gump: 9.2: 141
 A rettenthetetlen: 8.8: 178
 Jack and Jill: 91: 3.3
@@ -31,7 +31,7 @@ Disaster Movie: 87: 1.9
 Nincs kettő négy nélkül: 8.7: 99
 Hetedik: 8.8: 122
 Epic Movie: 86: 2.4
-A bolygó neve: Halál: 8.7: 137
+A bolygó neve-Halál: 8.7: 137
 Elrabolva: 8.9: 93
 Bűnvadászok: 8.8: 115
 InAPPropriate Comedy: 83: 2.8
