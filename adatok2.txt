@@ -1,39 +1,39 @@
 House of the Dead 2: 95: 2.4
 Freddy Got Fingered: 87: 4.6
-Kincs, ami nincs: 8.8: 102
-Terminátor 2. - Az ítélet napja: 9.0: 137
-Gran Torino: 8.9: 116
+Kincs, ami nincs: 102: 8.8
+Terminátor 2. - Az ítélet napja: 137: 9.0
+Gran Torino: 116: 8.9
 Birdemic Shock and Terror: 93: 1.8
 Disaster Movie: 87: 1.9
-Szerelmünk lapjai: 8.9: 123
+Szerelmünk lapjai: 123: 8.9
 The Ridiculous 6: 119: 4.8
 Van Helsing: 131: 6.1
 The Hottie & the Nottie: 91: 1.9
-Harcosok klubja: 8.7: 139
-A remény rabjai: 9.3: 137
+Harcosok klubja: 139: 8.7
+A remény rabjai: 137: 9.3
 Gigli: 121: 2.5
-A tanú: 8.8: 103
-Volt egyszer egy Vadnyugat: 8.8: 165
-Életrevalók: 9.0: 107
-Good Will Hunting: 8.7: 126
+A tanú: 103: 8.8
+Volt egyszer egy Vadnyugat: 165: 8.8
+Életrevalók: 107: 9.0
+Good Will Hunting: 126: 8.7
 Alone in the Dark: 96: 2.4
 Disaster Movie: 87: 1.9
-A keresztapa: 9.0: 175
+A keresztapa: 175: 9.0
 House of the Dead: 90: 2.0
-Amerikai história X: 8.8: 117
+Amerikai história X: 117: 8.8
 The Emoji Movie: 86: 3.3
-Gladiátor: 8.8: 149
-Stephen King-Halálsoron: 9.2: 188
-Forrest Gump: 9.2: 141
-A rettenthetetlen: 8.8: 178
+Gladiátor: 149: 8.8
+Stephen King-Halálsoron: 188: 9.2
+Forrest Gump: 141: 9.2
+A rettenthetetlen: 178: 8.8
 Jack and Jill: 91: 3.3
 Disaster Movie: 87: 1.9
-Nincs kettő négy nélkül: 8.7: 99
-Hetedik: 8.8: 122
+Nincs kettő négy nélkül: 99: 8.7
+Hetedik: 122: 8.8
 Epic Movie: 86: 2.4
-A bolygó neve-Halál: 8.7: 137
-Elrabolva: 8.9: 93
-Bűnvadászok: 8.8: 115
+A bolygó neve-Halál: 137: 8.7
+Elrabolva: 93: 8.9
+Bűnvadászok: 115: 8.8
 InAPPropriate Comedy: 83: 2.8
 Meet the Spartans: 86: 2.8
 Movie 43: 94: 4.3
@@ -43,18 +43,18 @@ Superbabies Baby Geniuses: 88: 2.0
 Troll 2: 95: 2.9
 The Love Guru: 87: 3.8
 Catwoman: 104: 3.3
-A Jó, a Rossz és a Csúf: 8.7: 155
-Oscar: 8.7: 106
-A szökevény: 8.7: 130
-Eredet: 8.7: 142
-Hacsi A leghűségesebb barát: 8.7: 89
-A Gyűrűk Ura - A király visszatér: 8.6: 201
-A tizedes meg a többiek: 8.6: 101
-Számkivetett: 8.6: 138
-Apocalypto: 8.6: 139
-Hair: 8.6: 117
-Pofa be!: 8.6: 150
-Egy asszony illata: 8.6:  150
-Csillagpor: 8.6: 127
-A Ravasz, az Agy és két füstölgő puskacső: 8.6: 107
-Indul a bakterház: 8.7: 66
+A Jó, a Rossz és a Csúf: 155: 8.7
+Oscar: 106: 8.7
+A szökevény: 130: 8.7
+Eredet: 142: 8.7
+Hacsi A leghűségesebb barát: 89: 8.7
+A Gyűrűk Ura - A király visszatér: 201: 8.6
+A tizedes meg a többiek: 101: 8.6
+Számkivetett: 138: 8.6
+Apocalypto: 139: 8.6
+Hair: 117: 8.6
+Pofa be!: 150: 8.6
+Egy asszony illata: 150: 8.6
+Csillagpor: 127: 8.6
+A Ravasz, az Agy és két füstölgő puskacső: 107: 8.6
+Indul a bakterház: 66: 8.7
