@@ -1,24 +1,26 @@
 import webbrowser
 from random import randint
 
-def beolvasas(cim, perc, ertekeles, melyikadat):
-    fr = open(melyikadat, "r", encoding="UTF-8")
+def beolvasas(cim, perc, ertekeles, melyikfajl):
+    fr = open(melyikfajl, "r", encoding="UTF-8")
     sor = fr.readline().split(": ")
     while sor != [""]:
         cim.append(sor[0])
         perc.append(int(sor[1]))
         ertekeles.append(float(sor[2]))
         sor = fr.readline().split(": ")
+    fr.close()
 
 def menu():
-    print("1. Adjá pézt :)")
+    print("1. Netflix eredeti oldala")
     print("2. Az 5 legjobbra értékelt film")
     print("3. Top 5 leghosszabb film")
     print("4. Top 5 legrövidebb film")
     print("5. Egy random film ajánlása")
     print("6. A legrosszabb értékelést kapott film")
+    print("7. Film hozzáadása")
     
-    valasz = int(input("Milyen filmeket szeretnél kapni? (1 - 6):"))
+    valasz = int(input("Mit szeretnél csinálni/megjeleníteni? (1 - 7):"))
     return valasz
 
 def melyikfajlkell():
@@ -42,6 +44,7 @@ def legjobbfilmek(cim, perc, ertekeles):
     print()       
     for z in range(5):
         print(f"Film címe: {cim[z]} - Értékelése: {ertekeles[z]}\n")
+    menu()
 def top5leghosszabb(cim, perc, ertekeles):
     n = len(cim)
     for i in range(n):
@@ -59,6 +62,7 @@ def top5leghosszabb(cim, perc, ertekeles):
     print()
     for z in range(5):
         print(f"Film címe: {cim[z]} - Hossza: {perc[z]} perc\n")
+    menu()
 
 
 
@@ -79,10 +83,13 @@ def top5legrovidebb(cim, perc, ertekeles):
 
     for z in range(5):
         print(f"Film címe: {cim[z]} - Hossza: {perc[z]}")   
-    
+    menu()
+
 def randomfilm(cim):
     n = len(cim)
     r = randint(0, n)
+    print()
+    print(f"Random film: {cim[r]}")
 
     
 def legrosszabb(cim, ertekeles):
@@ -101,7 +108,18 @@ def legrosszabb(cim, ertekeles):
         print(f"Legrosszabbra értékelt film: {cim[z]} - Értékelése: {ertekeles[z]}")    
 
 def bongeszo():
-    webbrowser.open('https://www.paypal.com/paypalme/benro213', new=2)
+    webbrowser.open('https://netflix.com', new=2)
+
+def iras(cim, perc, ertekeles, melyikfajl):
+    fw = open(melyikfajl, "a", encoding="UTF-8")
+    ujcim = input("Add meg az új film címét! ")
+    ujperc = int(input("Add meg az új film hosszát percben(pl: 130)! "))
+    ujertekeles = float(input("Add meg az új film értékelését(pl: 5.8)! "))
+    cim.append(ujcim)
+    perc.append(ujperc)
+    ertekeles.append(ujertekeles)
+    fw.write(f"{ujcim}: {ujperc}: {ujertekeles}\n")
+    fw.close()
 
 def main():
     cim = []
@@ -124,5 +142,7 @@ def main():
             randomfilm(cim)
         elif valasz == 6:
             legrosszabb(cim, ertekeles)
+        elif valasz == 7:
+            iras(cim, perc, ertekeles, melyikfajl)
 
 main()
