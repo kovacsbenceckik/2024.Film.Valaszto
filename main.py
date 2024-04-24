@@ -1,4 +1,3 @@
-import webbrowser
 from random import randint
 from time import sleep
 
@@ -16,7 +15,7 @@ def beolvasas(cim, perc, ertekeles, melyikfajl, osszeg):
     print(f"Ez a fájl {osszeg} film adatát tartalmazza\nBetöltés...")
     sleep(0.5)
 
-def menu(cim, perc, ertekeles):
+def menu(cim, perc, ertekeles, melyikfajl):
     print("1. Az 5 legjobbra értékelt film")
     print("2. Top 5 leghosszabb film")
     print("3. Top 5 legrövidebb film")
@@ -48,7 +47,7 @@ def menu(cim, perc, ertekeles):
     elif valasz == 8:
         karakter = input("Melyik karakterrel kezdődő filmeket keresel? ")
         karakter = karakter.upper()
-        kereses(cim, perc, ertekeles, karakter)
+        kereses(cim, perc, ertekeles, karakter, melyikfajl)
 
 def melyikfajlkell():
     melyikfajl = input("Melyik fájlból szeretnéd ezt végrehajtani? (Fájlnévkiterjesztéssel!) ")
@@ -109,7 +108,7 @@ def randomfilm(cim):
     n = len(cim)
     r = randint(0, n)
     print()
-    print(f"Random film: {cim[r]}")
+    print(f"Random film: {cim[r]}\n")
 
     
 def legrosszabb(cim, ertekeles):
@@ -124,8 +123,7 @@ def legrosszabb(cim, ertekeles):
                 cim[j] = x
                 ertekeles[j] = z 
     print()
-    for z in range(5):
-        print(f"Legrosszabbra értékelt film: {cim[z]} - Értékelése: {ertekeles[z]}")    
+    print(f"Legrosszabbra értékelt film: {cim[0]} - Értékelése: {ertekeles[0]}")    
 
 def bennevan(elem, lista):
     i = 0
@@ -154,13 +152,13 @@ def haromoranaltobb(cim, perc, ertekeles):
             cimek.append(cim[i])
     return cimek
 
-def kereses(cim, perc, ertekeles, karakter):
+def kereses(cim, perc, ertekeles, karakter, melyikfajl):
     n = len(cim)
     for i in range(n):
         if len(karakter) == 1 and cim[i][0] == karakter:
-            print()
             print(cim[i])
-    menu(cim, perc, ertekeles)
+            print()
+    menu(cim, perc, ertekeles, melyikfajl)
 
 def main():
     cim = []
@@ -169,6 +167,6 @@ def main():
     osszeg = 0
     melyikfajl = melyikfajlkell()
     beolvasas(cim, perc, ertekeles, melyikfajl, osszeg)
-    menu(cim, perc, ertekeles)
+    menu(cim, perc, ertekeles,melyikfajl)
 
 main()
