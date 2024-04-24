@@ -86,12 +86,19 @@ def randomfilm(cim):
 
     
 def legrosszabb(cim, ertekeles):
-    legk = 0
-    for i in range(1, len(ertekeles)):
-        if ertekeles[i] < ertekeles[legk]:
-            legk = i
-    return cim[legk]
-
+    n = len(cim)
+    for i in range(n):
+        for j in range(n):
+            if ertekeles[i] < ertekeles[j]:
+                x = cim[i]
+                z = ertekeles[i]
+                cim[i] = cim[j]
+                ertekeles[i] = ertekeles[j]
+                cim[j] = x
+                ertekeles[j] = z 
+    print()
+    for z in range(5):
+        print(f"Legrosszabbra értékelt film: {cim[z]} - Értékelése: {ertekeles[z]}")    
 
 def bongeszo():
     webbrowser.open('https://www.paypal.com/paypalme/benro213', new=2)
@@ -106,7 +113,6 @@ def main():
         bongeszo()
     else:
         melyikfajl = melyikfajlkell()
-    # print(melyikfajl)
         beolvasas(cim, perc, ertekeles, melyikfajl)
         if valasz == 2:
             legjobbfilmek(cim, perc, ertekeles)
@@ -117,6 +123,6 @@ def main():
         elif valasz == 5:
             randomfilm(cim)
         elif valasz == 6:
-            legrosszabb()
+            legrosszabb(cim, ertekeles)
 
 main()
