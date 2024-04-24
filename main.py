@@ -1,4 +1,5 @@
 import webbrowser
+from random import randint
 
 def beolvasas(cim, perc, ertekeles, melyikadat):
     fr = open(melyikadat, "r", encoding="UTF-8")
@@ -61,12 +62,28 @@ def top5leghosszabb(cim, perc, ertekeles):
 
 
 
-# def top5legrovidebb():
+def top5legrovidebb(cim, perc, ertekeles):
+    n = len(cim)
+    for i in range(n):
+        for j in range(n):
+            if perc[i] < perc[j]:
+                x = cim[i]
+                y = perc[i]
+                z = ertekeles[i]
+                cim[i] = cim[j]
+                perc[i] = perc[j]
+                ertekeles[i] = ertekeles[j]
+                cim[j] = x
+                perc[j] = y
+                ertekeles[j] = z  
+
+    for z in range(5):
+        print(f"Film címe: {cim[z]} - Hossza: {perc[z]}")   
     
-    
-    
-# def randomfilm():
-    
+def randomfilm(cim):
+    n = len(cim)
+    r = randint(0, n)
+
     
 def legrosszabb(cim, ertekeles):
     legk = 0
@@ -95,11 +112,11 @@ def main():
             legjobbfilmek(cim, perc, ertekeles)
         elif valasz == 3:
             top5leghosszabb(cim, perc, ertekeles)
-        # elif valasz == 4:
-        #     top5legrovidebb()
-        # elif valasz == 5:
-            # randomfilm()
-        # elif valasz == 6:
-        #     legrosszabb()
+        elif valasz == 4:
+            top5legrovidebb(cim, perc, ertekeles)
+        elif valasz == 5:
+            randomfilm(cim)
+        elif valasz == 6:
+            legrosszabb()
 
 main()
