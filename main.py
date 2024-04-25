@@ -39,7 +39,7 @@ def menu(cim, perc, ertekeles, melyikfajl):
     elif valasz == 6:
         iras(cim, perc, ertekeles, melyikfajl)
     elif valasz == 7:
-        cimek = haromoranaltobb(cim, perc, ertekeles)
+        cimek = haromoranaltobb(cim, perc)
         print("3 óránál hosszabb filmek:")
         for i in range(len(cimek)):
             print()
@@ -145,7 +145,7 @@ def iras(cim, perc, ertekeles, melyikfajl):
         print("Ez a film már benne van a fájlban.")
     fw.close()
 
-def haromoranaltobb(cim, perc, ertekeles):
+def haromoranaltobb(cim, perc):
     cimek = []
     for i in range(len(cim)):
         if perc[i] >= 180:
