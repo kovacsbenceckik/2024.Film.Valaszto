@@ -1,1 +1,7 @@
-asd: 1: 5.7
+House of the Dead 2: 95: 2.4
+Freddy Got Fingered: 87: 4.6
+Kincs, ami nincs: 102: 8.8
+Terminátor 2. - Az ítélet napja: 137: 9.0
+Gran Torino: 116: 8.9
+Birdemic Shock and Terror: 93: 1.8
+Disaster Movie: 87: 1.9
