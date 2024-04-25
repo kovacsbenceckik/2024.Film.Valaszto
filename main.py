@@ -23,7 +23,7 @@ def menu(cim, perc, ertekeles, melyikfajl):
     print("5. A legrosszabb értékelést kapott film")
     print("6. Film hozzáadása")
     print("7. 3 óránál hosszabb filmek")
-    print("8. Keresés első karakter megadásával")
+    print("8. Címkeresés első karakter megadásával")
     
     valasz = int(input("Mit szeretnél csinálni/megjeleníteni? (1 - 8):"))
     if valasz == 1:
