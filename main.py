@@ -48,6 +48,11 @@ def menu(cim, perc, ertekeles, melyikfajl):
         karakter = input("Melyik karakterrel kezdődő filmeket keresel? ")
         karakter = karakter.upper()
         kereses(cim, perc, ertekeles, karakter, melyikfajl)
+    else:
+        print()
+        print("Nincs ilyen menüpont.")
+        print()
+        menu(cim, perc, ertekeles, melyikfajl)
 
 def melyikfajlkell():
     melyikfajl = input("Melyik fájlból szeretnéd ezt végrehajtani? (Fájlnévkiterjesztéssel!) ")
