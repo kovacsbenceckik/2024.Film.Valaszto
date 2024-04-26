@@ -141,11 +141,14 @@ def iras(cim, perc, ertekeles, melyikfajl):
     ujcim = input("Add meg az új film címét! ")
     if not bennevan(ujcim, cim):
         ujperc = int(input("Add meg az új film hosszát percben(pl: 130)! "))
-        ujertekeles = float(input("Add meg az új film értékelését(pl: 5.8)! "))
-        cim.append(ujcim)
-        perc.append(ujperc)
-        ertekeles.append(ujertekeles)
-        fw.write(f"{ujcim}: {ujperc}: {ujertekeles}\n")
+        ujertekeles = float(input("Add meg az új film értékelését 0.0-10.0-ig(pl: 5.8)! "))
+        if ujertekeles < 0:
+            print("A megadott tartományban add meg az értékelést!")
+        else:
+            cim.append(ujcim)
+            perc.append(ujperc)
+            ertekeles.append(ujertekeles)
+            fw.write(f"{ujcim}: {ujperc}: {ujertekeles}\n")
     else:
         print("Ez a film már benne van a fájlban.")
     fw.close()
