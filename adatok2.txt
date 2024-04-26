@@ -59,4 +59,3 @@ Csillagpor: 127: 8.6
 A Ravasz, az Agy és két füstölgő puskacső: 107: 8.6
 Indul a bakterház: 66: 8.7
 Top Gun Maverick: 131: 8.2
-th: 432: 4.7

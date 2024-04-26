@@ -55,7 +55,7 @@ def menu(cim, perc, ertekeles, melyikfajl):
         menu(cim, perc, ertekeles, melyikfajl)
 
 def melyikfajlkell():
-    melyikfajl = input("Melyik fájlból szeretnéd ezt végrehajtani? (Fájlnévkiterjesztéssel!) ")
+    melyikfajl = input("Melyik fájlból szeretnéd az információkat? (Fájlnévkiterjesztéssel!) ")
 
     return melyikfajl
     
